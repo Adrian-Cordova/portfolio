@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+/* Navbar */
+.navbar {
+    top: 0  ;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 9000;
+    padding: 1rem 0;
+    text-align: center;
+    transition: background-color 03s;
+}
+
+.navbar-container {
+    display: inline-block;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333; 
+    font-weight: light;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+}
+
+/* Font & Type */
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    
+}
+
+a, h3 {
+    font-size: 2rem;
+    font-weight: 550;
+    color: #333;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #2F911F;
+}
+
+
+h1, h2 {
+    margin: 0;
+    line-height: .8;
+    font-size: 12rem;
+    font-weight: 400;
+    font-family: 'Gambarino', serif;
+    letter-spacing: -0.2rem; /* Increases character spacing */
+}
+
+h1 {
+    margin-bottom: 0.2em; 
+}
+
+.typewriter-effect {
+    font-size: 2rem;
+    line-height: 0;
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+    color: #333;
+}
+
+/* hero container div */
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 12rem;
+    text-align: left;
+    margin-top: -60px; /* Negative margin equal to the navbar height */
+    padding-top: 60px; /* Add padding to offset the negative margin */
+
+    /* Grid background */
+    background-image: 
+        linear-gradient(to right, #F8F8F8 10px, transparent 1px), /* Horizontal lines */
+        linear-gradient(to bottom, #F8F8F8 10px, transparent 1px); /* Vertical lines */
+    background-size: 30px 30px; /* Size of the grid squares */
+}
+
+/* Gradient overlay to fade from transparent to white */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #FFFFFF 100%);
+
+}
+
+.typed-cursor {
+    color: #333;
+    font-size: 2rem;
+}
